@@ -4,7 +4,7 @@ $(function() {
     if (usrCnt.data.length > 0) {							
       $.each(usrCnt.data.reverse(), function(i, val) {
         $('#dribbble').prepend(
-          '<div class="box col-md-4"><a href="'+val.html_url+'" target="_blank"><img src="'+val.images.normal+'" /></a><h5 class="text-center">'+val.title+'</h5><span>View '+val.views_count+'</span><span> Count '+val.likes_count+'</span> <span> Comment '+val.comments_count+'</span></div>'
+          '<div class="box col-md-4"><a href="'+val.html_url+'" target="_blank"><img src="'+val.images.normal+'" /></a><h5 class="text-center">'+val.title+'</h5><span><i class="fa fa-eye" aria-hidden="true"></i> '+val.views_count+'</span><span> <i class="fa fa-heart" aria-hidden="true"></i> '+val.likes_count+'</span> <span> <i class="fa fa-comment" aria-hidden="true"></i> '+val.comments_count+'</span></div>'
         );
 		  $(".post").prepend(
 		  '<div class="col-md-4 col-sm-6"></div>'

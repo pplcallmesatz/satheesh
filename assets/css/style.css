@@ -8,3 +8,6 @@ body {
 .logo img {
 	display: inline-block;
 }
+[class^="fa"] {
+	color: #ea4c89;
+}
