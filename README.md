@@ -1,2 +1,2 @@
 # satheesh
-This is my personal site. 
+This is my personel website.
