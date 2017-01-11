@@ -1,0 +1,10 @@
+body {
+	font-family: 'Pacifico', cursive;
+}
+
+.logo {
+	text-align: center;
+}
+.logo img {
+	display: inline-block;
+}
