@@ -9,7 +9,7 @@ $(function() {
           
         
         $('#dribbble').prepend(
-          '<div class="box col-md-4"><a href="'+val.html_url+'" target="_blank"><img src="'+val.images.normal+'" /></a><h5 class="text-center">'+val.title+'</h5><span><i class="fa fa-eye" aria-hidden="true"></i> '+val.views_count+'</span><span> <i class="fa fa-heart" aria-hidden="true"></i> '+val.likes_count+'</span> <span> <i class="fa fa-comment" aria-hidden="true"></i> '+val.comments_count+'</span><span> <i class="fa fa-calendar" aria-hidden="true"></i>'+ uploadDate+'</span></div>'
+          '<div class="box col-md-4"><a href="'+val.html_url+'" target="_blank"><img class="img-responsive" src="'+val.images.normal+'" /></a><h5 class="text-center">'+val.title+'</h5><span><i class="fa fa-eye" aria-hidden="true"></i> '+val.views_count+'</span><span> <i class="fa fa-heart" aria-hidden="true"></i> '+val.likes_count+'</span> <span> <i class="fa fa-comment" aria-hidden="true"></i> '+val.comments_count+'</span><span> <i class="fa fa-calendar" aria-hidden="true"></i>'+ uploadDate+'</span></div>'
         );
 		  $(".post").prepend(
 		  '<div class="col-md-4 col-sm-6"></div>'
