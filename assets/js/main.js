@@ -4,9 +4,9 @@ $(function() {
     if (usrCnt.data.length > 0) {							
       $.each(usrCnt.data.reverse(), function(i, val) {
           
-          var spli = val.created_at;
-          var datee = spli.split('T');
-          var uploadDate = datee[0];
+          var gDate = new Date(val.created_at);
+          var uploadDate = '<span>' +gDate.getDate()+ ' / ' +gDate.getMonth() + 1+  ' / ' +gDate.getFullYear() + '</span>';
+          
         
         $('#dribbble').prepend(
           '<div class="box col-md-4"><a href="'+val.html_url+'" target="_blank"><img src="'+val.images.normal+'" /></a><h5 class="text-center">'+val.title+'</h5><span><i class="fa fa-eye" aria-hidden="true"></i> '+val.views_count+'</span><span> <i class="fa fa-heart" aria-hidden="true"></i> '+val.likes_count+'</span> <span> <i class="fa fa-comment" aria-hidden="true"></i> '+val.comments_count+'</span><span> <i class="fa fa-calendar" aria-hidden="true"></i>'+ uploadDate+'</span></div>'
